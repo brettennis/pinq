@@ -4,15 +4,25 @@
 
 :root {
   --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
+  --background-start-rgb: 236, 225, 240;
   --background-end-rgb: 255, 255, 255;
+
+  --pink:  198, 151, 222;
+  --pink-light: 211, 181, 225;
+  --beige: 225, 185, 181;
+
+  --black: 32, 37, 41;
+  --gray0: 59, 56, 61;
+  --gray1: 124, 119, 128;
+  --gray2: 188, 180, 194;
+  --white: 236, 225, 240;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 236, 225, 240;
+    --background-end-rgb: 255, 255, 255;
   }
 }
 
@@ -24,6 +34,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+h1 {
+  font-family: var(--font-dm);
+  font-size: 3rem;
 }
 
 @layer utilities {
